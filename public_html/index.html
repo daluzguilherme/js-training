@@ -6,15 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>JavaScript Aula02</title>
+        <title>JavaScript Aula03</title>
         <meta charset="UTF-8">
-        <script type="text/javascript">
-            var largura = window.innerWidth;
-            alert(window.document.title);
+        <style type="text/css">
+            body {
+                background-color: black;
+            }
+        </style>
+        <script>
+            function ligar() {
+                var nome;
+                document.getElementById("apagada").src="images/ligada.jpg";
+            }
         </script>
-        
     </head>
-    <body>
-        <div>JavaScript Aula02</div>
+    <body onload="alert('carregado');">
+        <img  id="apagada" src="images/apagada.jpg" height="250" width="175" onclick="ligar();">
     </body>
 </html>
